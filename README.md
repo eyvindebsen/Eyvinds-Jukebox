@@ -381,6 +381,7 @@ And the amazing Exomizer packer!
 
 
 Technical details.
+
 The charset is a copy of the ROM charset, except for the 128+ chars, which is doubled height letters in uppercase.
 This was turned into a little piece of code(132 bytes), and stored at the BAM data, track 18,sector 0; offset 4 (140 bytes free here).
 Why? Because i already got a track/sector reader and spend the few bytes getting these data. Still got 88 bytes to waste there. Now wasted with a little intro.
