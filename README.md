@@ -1,9 +1,6 @@
 # Eyvinds-Jukebox vol 00
-73 sids on one disk (D64)
-
-Eyvind's Jukebox vol 00.
-
 73 high quality SIDs on one disk (D64).
+
 Not a byte wasted! (almost).
 Thats about 3+ hours of superb SID music.
 Use Joystick 2 to select a SID, press fire to play.
