@@ -387,6 +387,7 @@ Why? Because i already got a track/sector reader and spend the few bytes getting
 The SIDs are sorted by track/sector location.
 Had a stack problem, which was solved due to the excellent compressor; Exomizer!
 Did that extra TXS, due to leaving a subroutine early, rock solid now.
+
 Back end program used; Delphi.
 Can create any kind of disk with whatever SIDs.
 
@@ -396,10 +397,17 @@ This is because some songs require more than 1 call per frame, so udating the sc
 Also Sids are allowed to unpack almost anywhere in memory, except $c000-c800, and $e000-ffff, ohh and the charset at $3800.
 
 Stats for SIDs:
+
 Total size of all SIDS in raw format (without the 126 byte sid header):
+
 279.470 bytes.
+
 Total size of packed sids:
+
 172.032 bytes.
-Thats a sweet save of 107.438 bytes :D
+
+Thats a sweet save of 107.438 bytes!
+
 And there are more data to save... 
+
 Just need more SIDs! And thats the reason this is Vol 00 :)
