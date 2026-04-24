@@ -381,15 +381,20 @@ Technical details.
 
 The charset is a copy of the ROM charset, except for the 128+ chars, which is doubled height letters in uppercase.
 This was turned into a little piece of code(132 bytes), and stored at the BAM data, track 18,sector 0; offset 4 (140 bytes free here).
+
 Why? Because i already got a track/sector reader and spend the few bytes getting these data. Still got 88 bytes to waste there. Now wasted with a little intro.
+
 The SIDs are sorted by track/sector location.
 Had a stack problem, which was solved due to the excellent compressor; Exomizer!
 Did that extra TXS, due to leaving a subroutine early, rock solid now.
 Back end program used; Delphi.
 Can create any kind of disk with whatever SIDs.
+
 You might wonder why you cannot select a song during playback?
 This is because some songs require more than 1 call per frame, so udating the screen while playing will mess the sound up. Working on that.
-Also Sids are allowed to unpack anywhere in memory, except $c000-c800, and $e000-ffff, ohh and the charset at $3800.
+
+Also Sids are allowed to unpack almost anywhere in memory, except $c000-c800, and $e000-ffff, ohh and the charset at $3800.
+
 Stats for SIDs:
 Total size of all SIDS in raw format (without the 126 byte sid header):
 279.470 bytes.
